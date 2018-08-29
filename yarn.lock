@@ -6048,6 +6048,10 @@ vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
+vue2-sidebar@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/vue2-sidebar/-/vue2-sidebar-0.0.11.tgz#b9773381c18bacaee1425c7b6b48bc5c3805d68a"
+
 vue@^2.5.2:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
