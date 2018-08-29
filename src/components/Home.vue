@@ -1,6 +1,8 @@
 <template>
-  <div class="hello">
+  <div class="main-container">
+    <vue2-sidebar :links="navItems" heading="Menu">
     <h1>{{ msg }}</h1>
+  </vue2-sidebar>
   </div>
 </template>
 
@@ -9,7 +11,14 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Interndhip at Hokkaido University'
+      msg: 'Internship at Hokkaido University',
+      navItems: [{
+        label: 'First Item',
+        href: '',
+        icon: '',
+        class: 'item',
+        links: ''
+      }]
     }
   }
 }
