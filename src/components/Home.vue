@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <vue2-sidebar :links="navItems" heading="Menu">
+    <vue2-sidebar class="side-nav-bar" :links="navItems" heading="Menu">
     <h1>{{ msg }}</h1>
   </vue2-sidebar>
   </div>
@@ -40,4 +40,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>
