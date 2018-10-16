@@ -1,10 +1,11 @@
+
 <template>
   <div class="main-container">
     <h1 class="home-header">{{ title }}</h1>
     <br><br><br><br>
     Carousel Here
     <br><br><br><br>
-    {{ description }}
+    <p>{{ description }}</p>
     <br><br><br><br>
     <div class="content">
       <p v-for="section in contentData" :key="section.id">{{ section.header }}</p>
@@ -13,12 +14,13 @@
 </template>
 
 <script>
+import strings from '../assets/strings.txt'
 export default {
   name: 'HomePage',
   data () {
     return {
       title: 'Internship at Hokkaido University',
-      description: 'Description of the University',
+      description: this.splitString(strings, 1),
       contentData: [{
         id: 0,
         header: 'Fist Item',
@@ -40,6 +42,9 @@ export default {
   methods: {
     scrollTo (targetSection) {
 
+    },
+    splitString (str, index) {
+      return str.split(': ')[index]
     }
   }
 }
@@ -64,5 +69,9 @@ a {
 .home-header {
   font-size: 50px;
 }
-
+p {
+  text-align: justify;
+  white-space: normal;
+  margin: 250px;
+}
 </style>
