@@ -45,22 +45,16 @@
       </p>
     </b-carousel-slide>
     </b-carousel>
-    <div class="introduction-content">
-      <img src="../assets/images/hokudai-logo.png" />
-      <h1 class="intro-header">{{ universityIntro.header }}</h1>
-      <div>
-        <p>{{ universityIntro.description }}</p>
-        <p>{{ universityIntro.source }}</p>
-      </div>
-    </div>
-    <div class="introduction-content">
-      <img style="width: 50%; height: 50%;" src="../assets/images/ist-img.jpg" />
-      <h1 class="intro-header">{{ facultyIntro.header }}</h1>
-      <div>
-        <p>{{ facultyIntro.description }}</p>
-        <p>{{ facultyIntro.source }}</p>
-      </div>
-    </div>
+    <topic-info
+      image="static/images/hokudai-logo.png"
+      :header="universityIntro.header"
+      :description="universityIntro.description"
+      :source="universityIntro.source" />
+    <topic-info
+      image="static/images/ist-img.jpg"
+      :header="facultyIntro.header"
+      :description="facultyIntro.description"
+      :source="facultyIntro.source" />
     <div class="grid-sections-link">
       <div v-for="section in sections" :key="section.id" class="section">
         <h2>{{ section.title }}</h2>
@@ -73,8 +67,10 @@
 <script>
 import strings from '../assets/strings.txt'
 import router from '../router'
+import TopicInfo from '../components/ContentView'
 export default {
   name: 'HomePage',
+  components: { TopicInfo },
   data () {
     return {
       title: 'Internship at Hokkaido University',
@@ -181,18 +177,6 @@ p {
 
 b-carousel {
   text-shadow: 1px 1px 2px #333;
-}
-
-.introduction-content {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.intro-header {
-  width: 80%;
-  margin: auto;
 }
 
 .grid-sections-link {
