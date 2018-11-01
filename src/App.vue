@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <vue2-sidebar class="side-nav-bar" :links="navItems" heading="Menu">
     <router-view/>
     </vue2-sidebar>
@@ -51,7 +51,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
   background-color: #eff7f4;
 }
 
@@ -63,4 +62,8 @@ nav, .navbar {
   background: black !important;
 }
 
+div {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 </style>

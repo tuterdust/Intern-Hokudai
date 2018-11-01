@@ -1,5 +1,8 @@
-s1: Hokkaido University is one of the oldest, largest, and most prestigious universities in Japan.
+: s1: Hokkaido University is one of the oldest, largest, and most prestigious universities in Japan.
 Having the largest number of faculties of Japan’s national universities, Hokkaido University covers almost all areas of the humanities and social and natural sciences and also leading research activities in Japan and the world. alumni include a Nobel laureate, business leaders, research pioneers, artists and writers.
 In 2014, Hokkaido University was ranked 39th  in the QS World University Rankings in the field of Agriculture/Forestry and within the top 100 in six fields―Chemistry, Chemical Engineering, Materials Science, Biological Sciences, and Earth/Ocean Sciences.
 Hokkaido University offers a broad-based educational experience, world-class research facilities, and all the attractions of living in the cosmopolitan city of Sapporo. The atmosphere is warm and welcoming, campuses are clean and safe, and located in a breath-takingly beautiful setting.
-(Taken from https://www.global.hokudai.ac.jp/prospective-students/why-hokkaido-university)
+
+: s2: Graduate School of Information Science and Technology aims to contribute to the evolution of a highly sophisticated information society, which leads to the emergence of a knowledge-based society.
+The school supports graduate students study a legacy of theories in information science and technology and pursue new theories to become IT engineers with a broad range of knowledge and international perspectives.
+It also aims to nurture IT researchers capable of using their creativity to conduct research and development projects on their own.
