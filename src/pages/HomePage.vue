@@ -2,7 +2,6 @@
 <template>
   <div class="main-container">
     <h1 class="home-header">{{ title }}</h1>
-    <br><br><br><br>
     <b-carousel id="university-pv-carousel"
                controls
                indicators
@@ -13,6 +12,7 @@
                v-model="slide"
                @sliding-start="onSlideStart"
                @sliding-end="onSlideEnd"
+               style="margin-top: 40px !important;"
     >
     <!-- Text slides with image -->
     <b-carousel-slide caption="First slide"
@@ -45,6 +45,7 @@
       </p>
     </b-carousel-slide>
     </b-carousel>
+    <br><br>
     <topic-info
       image="static/images/hokudai-logo.png"
       :header="universityIntro.header"

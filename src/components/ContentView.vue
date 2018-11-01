@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .introduction-content {
-  margin-top: 40px;
+  margin: 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ export default {
 
 .intro-header {
   width: 80%;
-  margin: auto;
+  margin: 2% auto;
 }
 
 p {
