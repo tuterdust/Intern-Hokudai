@@ -13,7 +13,7 @@ export default {
     return {
       navItems: [{
         label: 'First Item',
-        href: '',
+        href: '#/content1',
         icon: '',
         class: 'item',
         links: ''

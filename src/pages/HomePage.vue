@@ -61,11 +61,18 @@
         <p>{{ facultyIntro.source }}</p>
       </div>
     </div>
+    <div class="grid-sections-link">
+      <div v-for="section in sections" :key="section.id" class="section">
+        <h2>{{ section.title }}</h2>
+        <img :src="section.pictures" v-on:click="changePage(section.link)">
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import strings from '../assets/strings.txt'
+import router from '../router'
 export default {
   name: 'HomePage',
   data () {
@@ -84,21 +91,47 @@ export default {
         source: '(https://www.ist.hokudai.ac.jp/eng/about/ideal.html)'
       },
 
-      contentData: [{
+      sections: [{
         id: 0,
-        header: 'Fist Item',
-        content: 'Seicomart Da best',
-        pictures: [
-          'a', 'b', 'c'
-        ]
+        title: 'section1',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: '/content1'
       },
       {
         id: 1,
-        header: 'Second Item',
-        content: 'セイコーマートへようこそ',
-        pictures: [
-          'a', 'b', 'c'
-        ]
+        title: 'section2',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: 'Content1'
+      },
+      {
+        id: 2,
+        title: 'section3',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: 'Content1'
+      },
+      {
+        id: 3,
+        title: 'section3',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: 'Content1'
+      },
+      {
+        id: 4,
+        title: 'section4',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: 'Content1'
+      },
+      {
+        id: 5,
+        title: 'section5',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: 'Content1'
+      },
+      {
+        id: 6,
+        title: 'section6',
+        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        link: 'Content1'
       }]
     }
   },
@@ -108,6 +141,9 @@ export default {
     },
     splitString (str, index) {
       return str.split(': ')[++index]
+    },
+    changePage (url) {
+      router.push(url)
     }
   }
 }
@@ -157,6 +193,27 @@ b-carousel {
 .intro-header {
   width: 80%;
   margin: auto;
+}
+
+.grid-sections-link {
+  margin-top: 40px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 250px 250px 250px;
+}
+
+.section {
+  position: relative;
+}
+
+.section h2 {
+  color: blue;
+  overflow: auto;
+}
+
+.section img {
+  width: 100%;
+  height: 100%;
 }
 
 </style>
