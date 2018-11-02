@@ -12,6 +12,13 @@ export default {
   data () {
     return {
       navItems: [{
+        label: 'Home',
+        href: '#/',
+        icon: '',
+        class: 'item',
+        links: ''
+      },
+      {
         label: 'Research',
         href: '#/research',
         icon: '',
@@ -26,7 +33,7 @@ export default {
         links: ''
       },
       {
-        label: 'Life In University',
+        label: 'Life at University',
         href: '#/life',
         icon: '',
         class: 'item',
@@ -79,5 +86,9 @@ nav, .navbar {
 div {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+b-carousel {
+  text-shadow: 1px 1px 2px #333;
 }
 </style>

@@ -1,4 +1,3 @@
-
 <template>
   <div class="main-container">
     <h1 class="home-header">{{ title }}</h1>
@@ -59,7 +58,7 @@
     <div class="grid-sections-link">
       <div v-for="section in sections" :key="section.id" class="section">
         <h2>{{ section.title }}</h2>
-        <img :src="section.pictures" v-on:click="changePage(section.link)">
+        <img :src="section.pictures" v-on:click="$changePage(section.link)">
       </div>
     </div>
   </div>
@@ -67,7 +66,6 @@
 
 <script>
 import strings from '../assets/strings.txt'
-import router from '../router'
 import TopicInfo from '../components/ContentView'
 export default {
   name: 'HomePage',
@@ -78,13 +76,13 @@ export default {
 
       universityIntro: {
         header: 'Hokkaido University',
-        description: this.splitString(strings, 1),
+        description: this.$splitString(strings, 1),
         source: '(https://www.global.hokudai.ac.jp/prospective-students/why-hokkaido-university)'
       },
 
       facultyIntro: {
         header: 'Graduate School of Information Science and Technology',
-        description: this.splitString(strings, 3),
+        description: this.$splitString(strings, 3),
         source: '(https://www.ist.hokudai.ac.jp/eng/about/ideal.html)'
       },
 
@@ -125,17 +123,6 @@ export default {
         link: '/contact'
       }]
     }
-  },
-  methods: {
-    scrollTo (targetSection) {
-
-    },
-    splitString (str, index) {
-      return str.split(': ')[++index]
-    },
-    changePage (url) {
-      router.push(url)
-    }
   }
 }
 </script>
@@ -168,10 +155,6 @@ p {
   text-align: justify;
   white-space: normal;
   margin: 0px 250px;
-}
-
-b-carousel {
-  text-shadow: 1px 1px 2px #333;
 }
 
 .grid-sections-link {
