@@ -12,29 +12,43 @@ export default {
   data () {
     return {
       navItems: [{
-        label: 'First Item',
-        href: '#/content1',
+        label: 'Research',
+        href: '#/research',
         icon: '',
         class: 'item',
         links: ''
       },
       {
-        label: 'Second Item',
-        href: '',
+        label: 'Accommodation',
+        href: '#/accommodation',
         icon: '',
         class: 'item',
         links: ''
       },
       {
-        label: 'Third Item',
-        href: '',
+        label: 'Life In University',
+        href: '#/life',
         icon: '',
         class: 'item',
         links: ''
       },
       {
-        label: 'Forth Item',
-        href: '',
+        label: 'Foods',
+        href: '#/foods',
+        icon: '',
+        class: 'item',
+        links: ''
+      },
+      {
+        label: 'Travel',
+        href: '#/travel',
+        icon: '',
+        class: 'item',
+        links: ''
+      },
+      {
+        label: 'Contact',
+        href: '#/contact',
         icon: '',
         class: 'item',
         links: ''

@@ -14,7 +14,7 @@ export default {
 
 <script>
 export default {
-  name: 'Component1',
+  name: 'Accommodation',
   data () {
     return {}
   }
