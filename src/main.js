@@ -3,12 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Utils from './mixins/Utils'
 import BootstrapVue from 'bootstrap-vue'
 import Vue2Sidebar from 'vue2-sidebar'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(BootstrapVue)
 Vue.use(Vue2Sidebar)
+Vue.mixin(Utils)
 
 Vue.config.productionTip = false
 
