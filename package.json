@@ -6,16 +6,17 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "node server.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.11",
+    "express": "^4.16.4",
     "raw-loader": "^0.5.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vue2-sidebar": "^0.0.11",
+    "vue2-sidebar": "^0.0.11"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
