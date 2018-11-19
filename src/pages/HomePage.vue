@@ -9,8 +9,6 @@
                img-width="1024"
                img-height="480"
                v-model="slide"
-               @sliding-start="onSlideStart"
-               @sliding-end="onSlideEnd"
                style="margin-top: 40px !important;"
     >
     <!-- Text slides with image -->
@@ -61,6 +59,7 @@
         <img :src="section.pictures" v-on:click="$changePage(section.link)">
       </div>
     </div>
+    <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
 </template>
 
