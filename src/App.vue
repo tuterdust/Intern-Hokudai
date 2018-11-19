@@ -66,29 +66,41 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background-color: #eff7f4;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    background-color: #eff7f4;
+  }
 
-a {
-  background: orange;
-}
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-nav, .navbar {
-  background: black !important;
-}
+  .back-to-top-btn {
+    align-self: flex-end !important;
+    margin-right: 5%;
+    margin-bottom: 1%;
+  }
 
-div {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
+  a {
+    background: orange;
+  }
 
-b-carousel {
-  text-shadow: 1px 1px 2px #333;
-}
+  nav, .navbar {
+    background: black !important;
+  }
+
+  div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  b-carousel {
+    text-shadow: 1px 1px 2px #333;
+  }
 </style>

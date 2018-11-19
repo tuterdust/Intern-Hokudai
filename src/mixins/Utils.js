@@ -7,6 +7,9 @@ export default {
     },
     $changePage (url) {
       router.push(url)
+    },
+    $backToPageTop () {
+      window.scrollTo(0, 0)
     }
   }
 }

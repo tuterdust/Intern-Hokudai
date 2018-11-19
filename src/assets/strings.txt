@@ -6,3 +6,15 @@ Hokkaido University offers a broad-based educational experience, world-class res
 : s2: Graduate School of Information Science and Technology aims to contribute to the evolution of a highly sophisticated information society, which leads to the emergence of a knowledge-based society.
 The school supports graduate students study a legacy of theories in information science and technology and pursue new theories to become IT engineers with a broad range of knowledge and international perspectives.
 It also aims to nurture IT researchers capable of using their creativity to conduct research and development projects on their own.
+
+: s3: Accommodation Desc
+
+: s4: Research Desc
+
+: s5: Life Desc
+
+: s6: Foods Desc
+
+: s7: Travel Desc
+
+: s8: Contact Desc
