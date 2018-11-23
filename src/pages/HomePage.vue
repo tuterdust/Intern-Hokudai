@@ -9,37 +9,23 @@
                img-width="1024"
                img-height="480"
                v-model="slide"
-               style="margin-top: 40px !important;"
+               style="margin-top: 40px !important; width: 100%;"
     >
-    <!-- Text slides with image -->
-    <b-carousel-slide caption="First slide"
-                      text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-                      img-src="https://picsum.photos/1024/480/?image=52"
-    ></b-carousel-slide>
-
-    <!-- Slides with custom text -->
-    <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-      <h1>Hello world!</h1>
+    <b-carousel-slide>
+      <img slot="img" class="d-block img-fluid w-100" wdth="1024" height="480"
+           src="/static/images/cover/img-cover-1.JPG" alt="image slot">
     </b-carousel-slide>
-
-    <!-- Slides with image only -->
-    <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58">
-    </b-carousel-slide>
-
-    <!-- Slides with img slot -->
-    <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="https://picsum.photos/1024/480/?image=55" alt="image slot">
+           src="/static/images/cover/img-cover-2.JPG" alt="image slot">
     </b-carousel-slide>
-
-    <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-    <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
-        ut lacus vel interdum.
-      </p>
+    <b-carousel-slide>
+      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+           src="/static/images/cover/img-cover-3.JPG" alt="image slot">
+    </b-carousel-slide>
+    <b-carousel-slide>
+      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+           src="/static/images/cover/img-cover-4.JPG" alt="image slot">
     </b-carousel-slide>
     </b-carousel>
     <br><br>
@@ -88,7 +74,7 @@ export default {
       sections: [{
         id: 0,
         title: 'Research',
-        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        pictures: require('@/assets/images/img-research-1.jpg'),
         link: '/research'
       },
       {
@@ -100,25 +86,25 @@ export default {
       {
         id: 2,
         title: 'Life in University',
-        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        pictures: require('@/assets/images/img-life-1.jpg'),
         link: '/life'
       },
       {
         id: 3,
         title: 'Foods',
-        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        pictures: require('@/assets/images/img-food-1.jpg'),
         link: '/foods'
       },
       {
         id: 4,
         title: 'Travel',
-        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        pictures: require('@/assets/images/img-furano-1.jpg'),
         link: '/travel'
       },
       {
         id: 5,
         title: 'Contact',
-        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        pictures: require('@/assets/images/img-contact-1.jpg'),
         link: '/contact'
       }]
     }
@@ -175,6 +161,10 @@ p {
 .section img {
   width: 100%;
   height: 100%;
+}
+
+.img-fluid {
+  height: 700px !important;
 }
 
 </style>
