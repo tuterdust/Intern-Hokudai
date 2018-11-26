@@ -12,7 +12,7 @@
                style="margin-top: 40px !important; width: 100%;"
     >
     <b-carousel-slide>
-      <img slot="img" class="d-block img-fluid w-100" wdth="1024" height="480"
+      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
            src="/static/images/cover/img-cover-1.JPG" alt="image slot">
     </b-carousel-slide>
     <b-carousel-slide>
@@ -38,7 +38,8 @@
       image="static/images/ist-img.jpg"
       :header="facultyIntro.header"
       :description="facultyIntro.description"
-      :source="facultyIntro.source" />
+      :source="facultyIntro.source"
+      style="margin-top: -10px !important" />
     <div class="grid-sections-link">
       <div v-for="section in sections" :key="section.id" class="section">
         <h2>{{ section.title }}</h2>

@@ -41,4 +41,8 @@ p {
   margin: 0px 250px;
 }
 
+img {
+  max-width: 500px;
+}
+
 </style>

@@ -14,23 +14,18 @@
 
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/research/img-research-1.JPG" alt="image slot">
-      <h1>Working Desk</h1>
+           src="/static/images/accommodation/img-dorm-1.jpg" alt="image slot">
+      <h1>Inside the room</h1>
     </b-carousel-slide>
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/research/img-research-2.JPG" alt="image slot">
-      <h1>Kawaya Terminal</h1>
+           src="/static/images/accommodation/img-dorm-2.jpg" alt="image slot">
+      <h1>Sapporo Station - 1</h1>
     </b-carousel-slide>
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/research/img-research-3.JPG" alt="image slot">
-      <h1>Kawaya Terminal UI - 1</h1>
-    </b-carousel-slide>
-    <b-carousel-slide>
-      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/research/img-research-4.JPG" alt="image slot">
-      <h1>Kawaya Terminal UI - 2</h1>
+           src="/static/images/accommodation/img-dorm-3.jpg" alt="image slot">
+      <h1>Sapporo Station - 2</h1>
     </b-carousel-slide>
 
     </b-carousel>

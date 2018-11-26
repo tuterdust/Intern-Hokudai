@@ -9,7 +9,7 @@ It also aims to nurture IT researchers capable of using their creativity to cond
 
 : s3: Accommodation Desc
 
-: s4: Research Desc
+: s4: An IoT device installed near a toilet. It helps users (mostly elderly and family members) record their stool data and send to the server. The sent data will be passed to the assigned doctor enabling a better and efficient treatment. It is developed using Python programming running on Raspberry Pi device.
 
 : s5: Life Desc
 
