@@ -84,6 +84,7 @@
       :header=subTitle[1]
       :description="$splitString(stringSrc, 21)"
       source="" />
+    <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
 </template>
 
