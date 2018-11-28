@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <h1 class="home-header">{{ title }}</h1>
+    <h1 class="home-header" style="margin-bottom: 20px;">{{ title }}</h1>
     <b-carousel id="foods-carousel"
                controls
                indicators
@@ -8,48 +8,82 @@
                :interval="4000"
                img-width="1024"
                img-height="480"
-               v-model="slide"
-               @sliding-start="onSlideStart"
-               @sliding-end="onSlideEnd"
-               style="margin-top: 40px !important;"
+               style="margin-top: 40px !important;height: 60%; width: 60%;"
     >
-    <!-- Text slides with image -->
-    <b-carousel-slide caption="First slide"
-                      text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-                      img-src="https://picsum.photos/1024/480/?image=52"
-    ></b-carousel-slide>
-
-    <!-- Slides with custom text -->
-    <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-      <h1>Hello world!</h1>
-    </b-carousel-slide>
-
-    <!-- Slides with image only -->
-    <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58">
-    </b-carousel-slide>
-
-    <!-- Slides with img slot -->
-    <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-    <b-carousel-slide>
-      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="https://picsum.photos/1024/480/?image=55" alt="image slot">
-    </b-carousel-slide>
-
-    <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-    <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
-        ut lacus vel interdum.
-      </p>
-    </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-1.JPG" alt="image slot">
+        <h1>Black Thunder</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-2.JPG" alt="image slot">
+        <h1>Okonomiyaki</h1>
+      </b-carousel-slide>
+      <!-- <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-3.JPG" alt="image slot">
+        <h1>Ramen</h1>
+      </b-carousel-slide> -->
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-4.JPG" alt="image slot">
+        <h1>Curry Soup</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-5.JPG" alt="image slot">
+        <h1>Mabo(Mapo) Tofu Set</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-6.JPG" alt="image slot">
+        <h1>Ramen</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-7.JPG" alt="image slot">
+        <h1>Soba</h1>
+      </b-carousel-slide>
+      <!-- <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-food-8.JPG" alt="image slot">
+        <h1>(Giant Crab) Sushi</h1>
+      </b-carousel-slide> -->
     </b-carousel>
-    <br><br>
     <topic-info
+      style="margin-top: -10px;"
       image=""
-      header="k"
-      description="n"
-      source="c" />
+      :header=subTitle[0]
+      :description="$splitString(stringSrc, 19)"
+      source="" />
+    <br><br>
+    <b-carousel id="drink-carousel"
+               controls
+               indicators
+               background="#ababab"
+               :interval="4000"
+               img-width="1024"
+               img-height="480"
+               style="margin-top: 40px !important;height: 40%; width: 40%;"
+    >
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-drink-1.JPG" alt="image slot">
+        <h1 style="text-shadow: 1px 1px 2px black;">Pokka Sapporo Vending Machine</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/foods/img-drink-2.JPG" alt="image slot">
+        <h1 style="text-shadow: 1px 1px 2px black;">Hokkaido Limited Coca-Cola</h1>
+      </b-carousel-slide>
+    </b-carousel>
+    <topic-info
+      style="margin-top: -10px;"
+      image=""
+      :header=subTitle[1]
+      :description="$splitString(stringSrc, 21)"
+      source="" />
   </div>
 </template>
 
@@ -57,13 +91,16 @@
 </style>
 
 <script>
+import strings from '../assets/strings.txt'
 import TopicInfo from '../components/ContentView'
 export default {
   name: 'Foods',
   components: { TopicInfo },
   data () {
     return {
-      title: 'Foods in Hokkaido'
+      title: 'Foods in Hokkaido',
+      subTitle: ['Food', 'Drink'],
+      stringSrc: strings
     }
   }
 }

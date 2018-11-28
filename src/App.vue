@@ -33,7 +33,7 @@ export default {
         links: ''
       },
       {
-        label: 'Life at University',
+        label: 'Life in Hokkaido',
         href: '#/life',
         icon: '',
         class: 'item',

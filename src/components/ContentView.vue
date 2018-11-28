@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .introduction-content {
-  margin: 100px 0px;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;

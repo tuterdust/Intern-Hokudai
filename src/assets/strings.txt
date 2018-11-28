@@ -7,14 +7,28 @@ Hokkaido University offers a broad-based educational experience, world-class res
 The school supports graduate students study a legacy of theories in information science and technology and pursue new theories to become IT engineers with a broad range of knowledge and international perspectives.
 It also aims to nurture IT researchers capable of using their creativity to conduct research and development projects on their own.
 
-: s3: Accommodation Desc
+: s3: A male only dormitory located near Sapporo Station. It is in Kita8, Higashi2, Sapporo. It can be easily seen by a distinctive red color. The dormitory is mostly for international student, but there are also some Japanese students living here as well. For a standard room, Each student will be assigned to a single small room equipped with basic furnitures including Heater as well! Each floor will have shared washroom and bathroom. The first floor is also a shared public area.
 
-: s4: An IoT device installed near a toilet. It helps users (mostly elderly and family members) record their stool data and send to the server. The sent data will be passed to the assigned doctor enabling a better and efficient treatment. It is developed using Python programming running on Raspberry Pi device.
+: s4: For female student or person looking for other dormitory, Hokkaido University also has dormitories located at other area as well.
 
-: s5: Life Desc
+: s5: An IoT device installed near a toilet. It helps users (mostly elderly and family members) record their stool data and send to the server. The sent data will be passed to the assigned doctor enabling a better and efficient treatment. It is developed using Python programming running on Raspberry Pi device.
 
-: s6: Foods Desc
+: s6: In Sapporo, there are many places to go. A city central area like Odori or Susukino or suburb area. You can enjoy the different atmosphere which blends well with the daily life. In Sapporo, people here are not as hurry as other area in Japan such as Tokyo (or even Bangkok). You can enjoy a good and breathtaking life here.
 
-: s7: Travel Desc
+: s7: Hokkaido has events throughout a year, whether a annual matsuri festival, firework festivals, or even beer festivals. The events are charming and will attract you to come over and over again. You can feel the Japanese and Hokkaido cultures while enjoying the lively scene and people.
 
-: s8: Contact Desc
+: s8: Hokkaido has a very convenient public transportation system. In Sapporo, it has subway network operated by Sapporo City Transportation Bureau, JR Trains (HST terminates at Hakodate), Trams. It also has Taxi and Bus services which are also pretty easy to use. To go to other area outside Sapporo, Main methods of transportation are Local train, bus, and car.
+
+: s9: Hokkaido University has wonderful atmosphere, having lot of trees which blend well with the building. You will feel close to nature when you are in the university. Many people also come to the university to relax during weekends. Facilities within the campus are very good, there are many shops and cafeterias(Foods here are quite cheap). A newly opened Seicomart has some beautiful design and will come in handy when you're hungry. In university, there is a custom to eat BBQ for celebration as well.
+
+: s10: abc
+
+: s11: def
+
+: s12: travel 1
+
+: s13: travel 2
+
+: s14: travel 3
+
+: s15: travel 4

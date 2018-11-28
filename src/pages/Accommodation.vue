@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <h1 class="home-header">{{ title }}</h1>
-    <b-carousel id="research-carousel"
+    <b-carousel id="accommodation-carousel"
                controls
                indicators
                background="#ababab"
@@ -10,31 +10,36 @@
                img-height="480"
                v-model="slide"
                style="margin-top: 40px !important;height: 60%; width: 60%;"
-    >
-
-    <b-carousel-slide>
-      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/accommodation/img-dorm-1.jpg" alt="image slot">
-      <h1>Inside the room</h1>
-    </b-carousel-slide>
-    <b-carousel-slide>
-      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/accommodation/img-dorm-2.jpg" alt="image slot">
-      <h1>Sapporo Station - 1</h1>
-    </b-carousel-slide>
-    <b-carousel-slide>
-      <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/accommodation/img-dorm-3.jpg" alt="image slot">
-      <h1>Sapporo Station - 2</h1>
-    </b-carousel-slide>
-
+      >
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/accommodation/img-dorm-1.jpg" alt="image slot">
+        <h1>Inside the room</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/accommodation/img-dorm-2.jpg" alt="image slot">
+        <h1>Sapporo Station - 1</h1>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="/static/images/accommodation/img-dorm-3.jpg" alt="image slot">
+        <h1>Sapporo Station - 2</h1>
+      </b-carousel-slide>
     </b-carousel>
     <br><br>
     <topic-info
       image=""
-      header="Ac Header"
+      header="Hokkaido University International House Kita8"
       :description="$splitString(stringSrc, 5)"
       source="" />
+    <br><br>
+    <topic-info
+        style="margin-top: -40px;"
+        image=""
+        header="More Options"
+        :description="$splitString(stringSrc, 7)"
+        source="" />
     <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
 </template>
