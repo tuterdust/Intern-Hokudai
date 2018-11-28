@@ -17,7 +17,7 @@ It also aims to nurture IT researchers capable of using their creativity to cond
 
 : s7: Hokkaido has events throughout a year, whether a annual matsuri festival, firework festivals, or even beer festivals. The events are charming and will attract you to come over and over again. You can feel the Japanese and Hokkaido cultures while enjoying the lively scene and people.
 
-: s8: Hokkaido has a very convenient public transportation system. In Sapporo, it has subway network operated by Sapporo City Transportation Bureau, JR Trains (HST terminates at Hakodate), Trams. It also has Taxi and Bus services which are also pretty easy to use. To go to other area outside Sapporo, Main methods of transportation are Local train, bus, and car.
+: s8: Hokkaido has a very convenient public transportation system. In Sapporo, it has subway network operated by Sapporo City Transportation Bureau, JR Trains (HST terminates at Hakodate), Street car. It also has Taxi and Bus services which are also pretty easy to use. To go to other area outside Sapporo, Main methods of transportation are Local train, bus, and car.
 
 : s9: Hokkaido University has wonderful atmosphere, having lot of trees which blend well with the building. You will feel close to nature when you are in the university. Many people also come to the university to relax during weekends. Facilities within the campus are very good, there are many shops and cafeterias(Foods here are quite cheap). A newly opened Seicomart has some beautiful design and will come in handy when you're hungry. In university, there is a custom to eat BBQ for celebration as well.
 
@@ -31,4 +31,6 @@ It also aims to nurture IT researchers capable of using their creativity to cond
 
 : s14: A very famous travel spot in Hokkaido. It it also a port city located in north west of Sapporo. You can eat fresh seafood here and enjoy seaside atmosphere. in the outskirt of Otaru, you can see the port and industrial area spread along the shoeline.
 
-: s15: House of A very famous chocolate factory by Ishiya. you can take a tour inside the facility which composes of many classical style buildings. You can also buy many Shiroi-Koibito products including limited one at the factory or even participate in the workshop. Nearby the factory, you can visit the practice field of Consadole Sapporo football club. 
+: s15: House of a very famous chocolate factory by Ishiya. you can take a tour inside the facility which composes of many classical style buildings. You can also buy many Shiroi-Koibito products including limited one at the factory or even participate in the workshop. Nearby the factory, you can visit the practice field of Consadole Sapporo football club.
+
+: s16: Forest Mountain located in south west of Sapporo, you can go to Mt.Moiwa using Street car line. You can buy ropeway ticket to go to the outlook area up in the mountain (which have 2 levels). In the first level you can buy souvenirs from the official shop. On the 2nd level, you can gaze through a beautiful landscape of Sapporo. It also has a Lovers Sanctuary. There is a legend that if the lovers attach the padlock to the handrail near the sanctuary and ring the bell together, they will be blessed with happiness.

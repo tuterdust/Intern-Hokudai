@@ -107,7 +107,7 @@
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
              src="/static/images/life/transportation/img-transport-4.JPG" alt="image slot">
-        <h1>Tram</h1>
+        <h1>Street Car</h1>
       </b-carousel-slide>
     </b-carousel>
     <topic-info

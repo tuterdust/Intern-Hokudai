@@ -6,6 +6,7 @@ export default {
       return str.split(': ')[++index]
     },
     $changePage (url) {
+      this.$backToPageTop()
       router.push(url)
     },
     $backToPageTop () {

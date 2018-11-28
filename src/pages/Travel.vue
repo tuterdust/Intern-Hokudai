@@ -153,7 +153,44 @@
         :header=subTitle[3]
         :description="$splitString(stringSrc, 29)"
         source="" />
-        <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
+      <br><br>
+      <b-carousel id="travel-moiwa-carousel"
+                 controls
+                 indicators
+                 background="#ababab"
+                 :interval="4000"
+                 img-width="1024"
+                 img-height="480"
+                 style="margin-top: 40px !important;height: 60%; width: 60%;"
+      >
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+               src="/static/images/travel/moiwa/img-moiwa-1.JPG" alt="image slot">
+          <h1>Cable Car</h1>
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+               src="/static/images/travel/moiwa/img-moiwa-2.JPG" alt="image slot">
+          <h1>Ropeway</h1>
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+               src="/static/images/travel/moiwa/img-moiwa-3.JPG" alt="image slot">
+          <h1>Lovers Sanctuary - 1</h1>
+        </b-carousel-slide>
+        <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+               src="/static/images/travel/moiwa/img-moiwa-4.JPG" alt="image slot">
+          <h1>Lovers Sanctuary - 2</h1>
+        </b-carousel-slide>
+      </b-carousel>
+      <topic-info
+        style="margin-top: -10px;"
+        image=""
+        :header=subTitle[4]
+        :description="$splitString(stringSrc, 31)"
+        source="" />
+      <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
 </template>
 
@@ -168,7 +205,7 @@ export default {
   components: { TopicInfo },
   data () {
     return {
-      subTitle: ['Furano', 'Maruyama', 'Otaru', 'Shiroi-Koibito'],
+      subTitle: ['Furano', 'Maruyama', 'Otaru', 'Shiroi-Koibito', 'Moiwa'],
       title: 'Travel',
       stringSrc: strings
     }
