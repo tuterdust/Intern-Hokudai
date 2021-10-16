@@ -87,10 +87,6 @@ export default {
     margin-bottom: 1%;
   }
 
-  a {
-    background: orange;
-  }
-
   nav, .navbar {
     background: black !important;
   }
