@@ -9,33 +9,33 @@
                img-width="1024"
                img-height="480"
                v-model="slide"
-               style="margin-top: 40px !important; width: 100%;"
+               style="margin-top: 40px !important; height: 60%; width: 40%;"
     >
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/cover/img-cover-1.JPG" alt="image slot">
+           :src="require(`@/assets/images/cover/img-cover-1.jpg`)" alt="image slot">
     </b-carousel-slide>
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/cover/img-cover-2.JPG" alt="image slot">
+           :src="require(`@/assets/images/cover/img-cover-2.jpg`)" alt="image slot">
     </b-carousel-slide>
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/cover/img-cover-3.JPG" alt="image slot">
+           :src="require(`@/assets/images/cover/img-cover-3.jpg`)" alt="image slot">
     </b-carousel-slide>
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-           src="/static/images/cover/img-cover-4.JPG" alt="image slot">
+           :src="require(`@/assets/images/cover/img-cover-4.jpg`)" alt="image slot">
     </b-carousel-slide>
     </b-carousel>
     <br><br>
     <topic-info
-      image="static/images/hokudai-logo.png"
+      :image="require(`@/assets/images/hokudai-logo.png`)"
       :header="universityIntro.header"
       :description="universityIntro.description"
       :source="universityIntro.source" />
     <topic-info
-      image="static/images/ist-img.jpg"
+      :image="require(`@/assets/images/ist-img.jpg`)"
       :header="facultyIntro.header"
       :description="facultyIntro.description"
       :source="facultyIntro.source"
@@ -59,6 +59,7 @@ export default {
   data () {
     return {
       title: 'Internship at Hokkaido University',
+      slide: 0,
 
       universityIntro: {
         header: 'Hokkaido University',
@@ -148,6 +149,7 @@ p {
   display: grid;
   justify-content: center;
   grid-template-columns: 250px 250px 250px;
+  grid-auto-rows: 250px 250px;
 }
 
 .section {
@@ -156,12 +158,13 @@ p {
 
 .section h2 {
   color: blue;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .section img {
+  object-fit:cover;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
 }
 
 .img-fluid {

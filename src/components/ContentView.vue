@@ -1,6 +1,6 @@
 <template>
   <div class="introduction-content">
-    <img :src="image" />
+    <img :src=image />
     <h1 class="intro-header">{{ header }}</h1>
     <div>
       <p>{{ description }}</p>
@@ -12,12 +12,7 @@
 <script>
 export default {
   name: 'TopicInfo',
-  props: ['image', 'header', 'description', 'source'],
-  data () {
-    return {
-      imgSource: require(this.image)
-    }
-  }
+  props: ['image', 'header', 'description', 'source']
 }
 
 </script>

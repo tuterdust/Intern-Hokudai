@@ -8,46 +8,46 @@
                :interval="4000"
                img-width="1024"
                img-height="480"
-               style="margin-top: 40px !important;height: 60%; width: 60%;"
+               style="margin-top: 40px !important;height: 40%; width: 40%;"
     >
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-1.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-1.jpg" alt="image slot">
         <h1>Black Thunder</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-2.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-2.jpg" alt="image slot">
         <h1>Okonomiyaki</h1>
       </b-carousel-slide>
       <!-- <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-3.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-3.jpg" alt="image slot">
         <h1>Ramen</h1>
       </b-carousel-slide> -->
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-4.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-4.jpg" alt="image slot">
         <h1>Curry Soup</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-5.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-5.jpg" alt="image slot">
         <h1>Mabo(Mapo) Tofu Set</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-6.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-6.jpg" alt="image slot">
         <h1>Ramen</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-7.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-7.jpg" alt="image slot">
         <h1>Soba</h1>
       </b-carousel-slide>
       <!-- <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-food-8.JPG" alt="image slot">
+             src="@/assets/images/foods/img-food-8.jpg" alt="image slot">
         <h1>(Giant Crab) Sushi</h1>
       </b-carousel-slide> -->
     </b-carousel>
@@ -69,12 +69,12 @@
     >
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-drink-1.JPG" alt="image slot">
+             src="@/assets/images/foods/img-drink-1.jpg" alt="image slot">
         <h1 style="text-shadow: 1px 1px 2px black;">Pokka Sapporo Vending Machine</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/foods/img-drink-2.JPG" alt="image slot">
+             src="@/assets/images/foods/img-drink-2.jpg" alt="image slot">
         <h1 style="text-shadow: 1px 1px 2px black;">Hokkaido Limited Coca-Cola</h1>
       </b-carousel-slide>
     </b-carousel>

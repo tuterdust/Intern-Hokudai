@@ -1,6 +1,6 @@
 <template>
   <div id="app" >
-    <vue2-sidebar class="side-nav-bar" :links="navItems" heading="Menu">
+    <vue2-sidebar class="side-nav-bar" id="nav-bar" :links="navItems" heading="Menu">
     <router-view/>
     </vue2-sidebar>
   </div>
@@ -93,6 +93,10 @@ export default {
 
   nav, .navbar {
     background: black !important;
+  }
+
+  .bg-light {
+    background-color: #eff7f4 !important;
   }
 
   div {

@@ -8,26 +8,26 @@
                :interval="4000"
                img-width="1024"
                img-height="480"
-               style="margin-top: 40px !important;height: 60%; width: 60%;"
+               style="margin-top: 40px !important;height: 40%; width: 40%;"
     >
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/research/img-research-1.JPG" alt="image slot">
+             src="@/assets/images/research/img-research-1.jpg" alt="image slot">
         <h1>Working Desk</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/research/img-research-2.JPG" alt="image slot">
+             src="@/assets/images/research/img-research-2.jpg" alt="image slot">
         <h1>Kawaya Terminal</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/research/img-research-3.JPG" alt="image slot">
+             src="@/assets/images/research/img-research-3.jpg" alt="image slot">
         <h1>Kawaya Terminal UI - 1</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/research/img-research-4.JPG" alt="image slot">
+             src="@/assets/images/research/img-research-4.jpg" alt="image slot">
         <h1>Kawaya Terminal UI - 2</h1>
       </b-carousel-slide>
     </b-carousel>

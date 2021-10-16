@@ -9,21 +9,21 @@
                img-width="1024"
                img-height="480"
                v-model="slide"
-               style="margin-top: 40px !important;height: 60%; width: 60%;"
+               style="margin-top: 40px !important;height: 40%; width: 40%;"
       >
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/accommodation/img-dorm-1.jpg" alt="image slot">
+             src="@/assets/images/accommodation/img-dorm-1.jpg" alt="image slot">
         <h1>Inside the room</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/accommodation/img-dorm-2.jpg" alt="image slot">
+             src="@/assets/images/accommodation/img-dorm-2.jpg" alt="image slot">
         <h1>Sapporo Station - 1</h1>
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="/static/images/accommodation/img-dorm-3.jpg" alt="image slot">
+             src="@/assets/images/accommodation/img-dorm-3.jpg" alt="image slot">
         <h1>Sapporo Station - 2</h1>
       </b-carousel-slide>
     </b-carousel>
@@ -56,7 +56,8 @@ export default {
   data () {
     return {
       title: 'Accommodation',
-      stringSrc: strings
+      stringSrc: strings,
+      slide: 0
     }
   }
 }
