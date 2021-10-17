@@ -23,5 +23,6 @@ module.exports = {
           extensions: ['.js', '.vue', '.json', '.jpg', '.png']
         }
     },
-    runtimeCompiler: true
+    runtimeCompiler: true,
+    publicPath: '/Intern-Hokudai/'
 }
