@@ -9,7 +9,7 @@
                img-width="1024"
                img-height="480"
                v-model="slide"
-               style="margin-top: 40px !important; height: 60%; width: 40%;"
+               style="margin-top: 40px !important; height: 60%; width: 80%;"
     >
     <b-carousel-slide>
       <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
