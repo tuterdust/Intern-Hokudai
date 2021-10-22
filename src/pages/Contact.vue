@@ -31,10 +31,9 @@
 </style>
 
 <script>
-import TopicInfo from '../components/ContentView'
 export default {
   name: 'Contact',
-  components: { TopicInfo },
+  components: {},
   data () {
     return {
       title: 'Contact',
