@@ -76,37 +76,37 @@ export default {
       sections: [{
         id: 0,
         title: 'Research',
-        pictures: require('@/assets/images/img-research-1.jpg'),
+        pictures: require('@/assets/images/img-research-link.jpg'),
         link: '/research'
       },
       {
         id: 1,
         title: 'Accommodation',
-        pictures: require('@/assets/images/img-dorm-1.jpg'),
+        pictures: require('@/assets/images/img-dorm-link.jpg'),
         link: '/accommodation'
       },
       {
         id: 2,
         title: 'Life in University',
-        pictures: require('@/assets/images/img-life-1.jpg'),
+        pictures: require('@/assets/images/img-life-link.jpg'),
         link: '/life'
       },
       {
         id: 3,
         title: 'Foods',
-        pictures: require('@/assets/images/img-food-1.jpg'),
+        pictures: require('@/assets/images/img-food-link.jpg'),
         link: '/foods'
       },
       {
         id: 4,
         title: 'Travel',
-        pictures: require('@/assets/images/img-furano-1.jpg'),
+        pictures: require('@/assets/images/img-furano-link.jpg'),
         link: '/travel'
       },
       {
         id: 5,
         title: 'Contact',
-        pictures: require('@/assets/images/img-contact-1.jpg'),
+        pictures: require('@/assets/images/img-contact-link.jpg'),
         link: '/contact'
       }]
     }

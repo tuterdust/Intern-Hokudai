@@ -12,7 +12,7 @@
       >
         <b-carousel-slide>
           <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-               src="@/assets/images/life/neighborhood/img-nh-5.jpg" alt="image slot">
+               src="@/assets/images/life/neighborhood/img-nh-1.jpg" alt="image slot">
           <h1>Odori - 1</h1>
         </b-carousel-slide>
         <b-carousel-slide>
@@ -49,7 +49,7 @@
     >
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="@/assets/images/life/event/img-hanabi-6.jpg" alt="image slot">
+             src="@/assets/images/life/event/img-hanabi-1.jpg" alt="image slot">
         <h1>Hanabi Taikai - 1</h1>
       </b-carousel-slide>
       <b-carousel-slide>
@@ -107,7 +107,12 @@
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
              src="@/assets/images/life/transportation/img-transport-4.jpg" alt="image slot">
-        <h1>Street Car</h1>
+        <h1>Streetcar</h1>
+      </b-carousel-slide>
+       <b-carousel-slide>
+        <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+             src="@/assets/images/life/transportation/img-transport-5.jpg" alt="image slot">
+        <h1>Streetcar Map</h1>
       </b-carousel-slide>
     </b-carousel>
     <topic-info
@@ -133,7 +138,7 @@
       </b-carousel-slide>
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-             src="@/assets/images/life/university/img-uni-5.jpg" alt="image slot">
+             src="@/assets/images/life/university/img-uni-2.jpg" alt="image slot">
         <h1>Snow Crystal Monument</h1>
       </b-carousel-slide>
       <b-carousel-slide>

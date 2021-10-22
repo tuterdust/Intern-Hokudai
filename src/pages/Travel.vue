@@ -50,12 +50,7 @@
         <b-carousel-slide>
           <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
                src="@/assets/images/travel/maruyama/img-shrine-1.jpg" alt="image slot">
-          <h1>Hokkaido Shrine - 1</h1>
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
-               src="@/assets/images/travel/maruyama/img-shrine-2.jpg" alt="image slot">
-          <h1>Hokkaido Shrine - 2</h1>
+          <h1>Hokkaido Shrine</h1>
         </b-carousel-slide>
         <b-carousel-slide>
           <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
@@ -71,6 +66,11 @@
           <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
                src="@/assets/images/travel/maruyama/img-zoo-3.jpg" alt="image slot">
           <h1>Maruyama Zoo - Tiger</h1>
+        </b-carousel-slide>
+         <b-carousel-slide>
+          <img slot="img" class="d-block img-fluid w-100" width="1024" height="480"
+               src="@/assets/images/travel/maruyama/img-zoo-4.jpg" alt="image slot">
+          <h1>Maruyama Zoo - Red Panda</h1>
         </b-carousel-slide>
       </b-carousel>
       <topic-info
