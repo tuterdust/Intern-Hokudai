@@ -35,7 +35,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[0]
-        :description="$splitString(stringSrc, 11)"
+        :description=descriptionDict.life.sapporo
         source="" />
     <br><br>
     <b-carousel id="life-event-carousel"
@@ -77,7 +77,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[1]
-        :description="$splitString(stringSrc, 13)"
+        :description=descriptionDict.life.event
         source="" />
     <br><br>
     <b-carousel id="life-transport-carousel"
@@ -119,7 +119,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[2]
-        :description="$splitString(stringSrc, 15)"
+        :description=descriptionDict.life.transportation
         source="" />
     <br><br>
     <b-carousel id="life-university-carousel"
@@ -156,7 +156,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[3]
-        :description="$splitString(stringSrc, 17)"
+        :description=descriptionDict.life.university
         source="" />
     <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
@@ -166,8 +166,9 @@
 </style>
 
 <script>
-import strings from '../assets/strings.txt'
-import TopicInfo from '../components/ContentView'
+import descriptionDict from '@/assets/description.json'
+import TopicInfo from '@/components/ContentView'
+
 export default {
   name: 'life',
   components: { TopicInfo },
@@ -176,7 +177,7 @@ export default {
       title: 'Life in Hokkaido',
       subTitle: ['Sapporo', 'Event', 'Transportation', 'University'],
       topicHeader: 'life At Sapporo',
-      stringSrc: strings
+      descriptionDict: descriptionDict
     }
   }
 }

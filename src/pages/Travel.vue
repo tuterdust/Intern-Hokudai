@@ -35,7 +35,7 @@
       style="margin-top: -10px;"
       image=""
       :header=subTitle[0]
-      :description="$splitString(stringSrc, 23)"
+      :description=descriptionDict.travel.furano
       source="" />
     <br><br>
     <b-carousel id="travel-maruyama-carousel"
@@ -77,7 +77,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[1]
-        :description="$splitString(stringSrc, 25)"
+        :description=descriptionDict.travel.maruyama
         source="" />
       <br><br>
       <b-carousel id="travel-otaru-carousel"
@@ -114,7 +114,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[2]
-        :description="$splitString(stringSrc, 27)"
+        :description=descriptionDict.travel.otaru
         source="" />
       <br><br>
       <b-carousel id="travel-shiroi-koibito-carousel"
@@ -151,7 +151,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[3]
-        :description="$splitString(stringSrc, 29)"
+        :description=descriptionDict.travel.chocofactory
         source="" />
       <br><br>
       <b-carousel id="travel-moiwa-carousel"
@@ -188,7 +188,7 @@
         style="margin-top: -10px;"
         image=""
         :header=subTitle[4]
-        :description="$splitString(stringSrc, 31)"
+        :description=descriptionDict.travel.moiwa
         source="" />
       <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
@@ -198,8 +198,9 @@
 </style>
 
 <script>
-import strings from '../assets/strings.txt'
-import TopicInfo from '../components/ContentView'
+import descriptionDict from '@/assets/description.json'
+import TopicInfo from '@/components/ContentView'
+
 export default {
   name: 'Travel',
   components: { TopicInfo },
@@ -207,7 +208,7 @@ export default {
     return {
       subTitle: ['Furano', 'Maruyama', 'Otaru', 'Shiroi-Koibito', 'Moiwa'],
       title: 'Travel',
-      stringSrc: strings
+      descriptionDict: descriptionDict
     }
   }
 }

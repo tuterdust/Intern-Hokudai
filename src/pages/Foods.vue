@@ -45,7 +45,7 @@
       style="margin-top: -10px;"
       image=""
       :header=subTitle[0]
-      :description="$splitString(stringSrc, 19)"
+      :description=descriptionDict.food
       source="" />
     <br><br>
     <b-carousel id="drink-carousel"
@@ -72,7 +72,7 @@
       style="margin-top: -10px;"
       image=""
       :header=subTitle[1]
-      :description="$splitString(stringSrc, 21)"
+      :description=descriptionDict.drink
       source="" />
     <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
@@ -82,8 +82,9 @@
 </style>
 
 <script>
-import strings from '../assets/strings.txt'
-import TopicInfo from '../components/ContentView'
+import descriptionDict from '@/assets/description.json'
+import TopicInfo from '@/components/ContentView'
+
 export default {
   name: 'Foods',
   components: { TopicInfo },
@@ -91,7 +92,7 @@ export default {
     return {
       title: 'Foods in Hokkaido',
       subTitle: ['Food', 'Drink'],
-      stringSrc: strings
+      descriptionDict: descriptionDict
     }
   }
 }

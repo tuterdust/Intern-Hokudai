@@ -31,14 +31,14 @@
     <topic-info
       image=""
       header="Hokkaido University International House Kita8"
-      :description="$splitString(stringSrc, 5)"
+      :description=descriptionDict.accommodation.male
       source="" />
     <br><br>
     <topic-info
         style="margin-top: -40px;"
         image=""
         header="More Options"
-        :description="$splitString(stringSrc, 7)"
+        :description=descriptionDict.accommodation.female
         source="" />
     <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
@@ -48,15 +48,16 @@
 </style>
 
 <script>
-import strings from '../assets/strings.txt'
-import TopicInfo from '../components/ContentView'
+import descriptionDict from '@/assets/description.json'
+import TopicInfo from '@/components/ContentView'
+
 export default {
   name: 'Accommodation',
   components: { TopicInfo },
   data () {
     return {
       title: 'Accommodation',
-      stringSrc: strings,
+      descriptionDict: descriptionDict,
       slide: 0
     }
   }
