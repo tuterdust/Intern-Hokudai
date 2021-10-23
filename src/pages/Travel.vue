@@ -37,7 +37,7 @@
       :header=subTitle[0]
       :description=descriptionDict.travel.furano
       source="" />
-    <br><br>
+
     <b-carousel id="travel-maruyama-carousel"
                controls
                indicators
@@ -79,7 +79,7 @@
         :header=subTitle[1]
         :description=descriptionDict.travel.maruyama
         source="" />
-      <br><br>
+
       <b-carousel id="travel-otaru-carousel"
                  controls
                  indicators
@@ -116,7 +116,7 @@
         :header=subTitle[2]
         :description=descriptionDict.travel.otaru
         source="" />
-      <br><br>
+
       <b-carousel id="travel-shiroi-koibito-carousel"
                  controls
                  indicators
@@ -153,7 +153,7 @@
         :header=subTitle[3]
         :description=descriptionDict.travel.chocofactory
         source="" />
-      <br><br>
+
       <b-carousel id="travel-moiwa-carousel"
                  controls
                  indicators

@@ -31,7 +31,7 @@
         <h1>Kawaya Terminal UI - 2</h1>
       </b-carousel-slide>
     </b-carousel>
-    <br><br>
+
     <topic-info
       image=""
       header="Personal Healthcare Terminal"

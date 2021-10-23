@@ -27,18 +27,17 @@
         <h1>Sapporo Station - 2</h1>
       </b-carousel-slide>
     </b-carousel>
-    <br><br>
+
     <topic-info
       image=""
       header="Hokkaido University International House Kita8"
       :description=descriptionDict.accommodation.male
-      source="" />
-    <br><br>
+      source=""
+      style="margin-bottom: 10px;" />
     <topic-info
-        style="margin-top: -40px;"
         image=""
         header="More Options"
-        :description=descriptionDict.accommodation.female
+        :description=descriptionDict.accommodation.other
         source="" />
     <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>

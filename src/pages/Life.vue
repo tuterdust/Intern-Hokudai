@@ -37,7 +37,7 @@
         :header=subTitle[0]
         :description=descriptionDict.life.sapporo
         source="" />
-    <br><br>
+
     <b-carousel id="life-event-carousel"
                controls
                indicators
@@ -79,7 +79,7 @@
         :header=subTitle[1]
         :description=descriptionDict.life.event
         source="" />
-    <br><br>
+
     <b-carousel id="life-transport-carousel"
                controls
                indicators
@@ -121,7 +121,7 @@
         :header=subTitle[2]
         :description=descriptionDict.life.transportation
         source="" />
-    <br><br>
+
     <b-carousel id="life-university-carousel"
                controls
                indicators

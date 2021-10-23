@@ -47,7 +47,7 @@
       :header=subTitle[0]
       :description=descriptionDict.food
       source="" />
-    <br><br>
+
     <b-carousel id="drink-carousel"
                controls
                indicators
