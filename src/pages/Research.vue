@@ -31,26 +31,27 @@
         <h1>Kawaya Terminal UI - 2</h1>
       </b-carousel-slide>
     </b-carousel>
-    <br><br>
+
     <topic-info
       image=""
       header="Personal Healthcare Terminal"
-      :description="$splitString(stringSrc, 9)"
+      :description=descriptionDict.research
       source="" />
     <button class="btn btn-info back-to-top-btn" v-on:click="$backToPageTop()">Back To Top</button>
   </div>
 </template>
 
 <script>
-import strings from '../assets/strings.txt'
-import TopicInfo from '../components/ContentView'
+import descriptionDict from '@/assets/description.json'
+import TopicInfo from '@/components/ContentView'
+
 export default {
   name: 'Research',
   components: { TopicInfo },
   data () {
     return {
       title: 'Research',
-      stringSrc: strings
+      descriptionDict: descriptionDict
     }
   }
 }

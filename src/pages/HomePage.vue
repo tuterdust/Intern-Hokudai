@@ -28,12 +28,12 @@
            :src="require(`@/assets/images/cover/img-cover-4.jpg`)" alt="image slot">
     </b-carousel-slide>
     </b-carousel>
-    <br><br>
     <topic-info
       :image="require(`@/assets/images/hokudai-logo.png`)"
       :header="universityIntro.header"
       :description="universityIntro.description"
-      :source="universityIntro.source" />
+      :source="universityIntro.source"
+      style="margin-bottom: 50px;" />
     <topic-info
       :image="require(`@/assets/images/ist-img.jpg`)"
       :header="facultyIntro.header"
@@ -51,8 +51,9 @@
 </template>
 
 <script>
-import strings from '../assets/strings.txt'
-import TopicInfo from '../components/ContentView'
+import descriptionDict from '@/assets/description.json'
+import TopicInfo from '@/components/ContentView'
+
 export default {
   name: 'HomePage',
   components: { TopicInfo },
@@ -63,13 +64,13 @@ export default {
 
       universityIntro: {
         header: 'Hokkaido University',
-        description: this.$splitString(strings, 1),
+        description: descriptionDict.intro,
         source: '(https://www.global.hokudai.ac.jp/prospective-students/why-hokkaido-university)'
       },
 
       facultyIntro: {
         header: 'Graduate School of Information Science and Technology',
-        description: this.$splitString(strings, 3),
+        description: descriptionDict.ist,
         source: '(https://www.ist.hokudai.ac.jp/eng/about/ideal.html)'
       },
 
@@ -114,7 +115,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
   font-weight: normal;

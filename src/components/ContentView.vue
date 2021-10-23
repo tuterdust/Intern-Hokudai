@@ -32,7 +32,7 @@ export default {
 
 p {
   text-align: justify;
-  white-space: normal;
+  white-space: pre-line;
   margin: 0px 250px;
 }
 
